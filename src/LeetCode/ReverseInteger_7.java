@@ -1,11 +1,9 @@
 package LeetCode;
 
-import StriverDSA.BasicMaths.ReverseNumber;
-
 /*Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0*/
-public class ReverseInteger {
+public class ReverseInteger_7 {
     public static void main(String[] args) {
-        ReverseInteger obj = new ReverseInteger();
+        ReverseInteger_7 obj = new ReverseInteger_7();
         int num = -123;
         System.out.println(obj.reverse(num));
 
