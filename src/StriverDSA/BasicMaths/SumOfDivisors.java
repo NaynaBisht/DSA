@@ -16,6 +16,7 @@ public class SumOfDivisors {
     public static void main(String[] args) {
         int num = 4;
         System.out.println(sumOfDivisors(num));
+        System.out.println(sumDivisors(num));
     }
     static long sumOfDivisors(int N){
         // code here
@@ -25,6 +26,16 @@ public class SumOfDivisors {
                 if(i%j == 0)
                     sum+=j;
             }
+        }
+        return sum;
+    }
+//    optimised approach
+    static long sumDivisors(int N) {
+        long sum = 0;
+        // Loop over each divisor
+        for (int i = 1; i <= N; i++) {
+            // Add 'i' as a divisor for all its multiples
+            sum += (N / i) * i;
         }
         return sum;
     }
